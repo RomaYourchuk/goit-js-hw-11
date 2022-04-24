@@ -1,0 +1,76 @@
+body {
+    background-color:aqua;
+}
+
+.search-form {
+    display: flex;
+    justify-content: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    margin-bottom: 70px;
+    background: rgb(2,0,36);
+background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(67,121,9,1) 35%, rgba(0,212,255,1) 100%);
+}
+
+input {
+    display: block;
+    font: inherit;
+    padding: 10px;
+    border: 1px solid blue;
+    border-radius: 50px;
+}
+
+.search-btn {
+    border: 1px solid blue;
+    border-radius: 50px;
+    background-color: yellow;
+}
+
+.gallery {
+    display: grid;
+    max-width: 1140px;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    grid-gap: 20px;
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+  
+.photo-card {
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0px 1px 3px rgba(0,0,0,0.12),
+    0px 1px 1px rgba(0,0,0,0.14),
+    0px 2px 1px rgba(0,0,0,0.2);
+    background-color: whitesmoke;
+
+}
+.info {
+    padding: 10px;
+    color: skyblue;
+}
+
+img {
+    display: block;
+    height: 275px;
+    max-width: 100%;
+    object-fit: cover;
+}
+p {
+    margin: 0;
+}
+
+.top  {
+    font-size: 30px;
+    position: fixed;
+    display: none;
+    border-radius: 33%;
+    top: 85%;
+    left: 90%;
+    display: block;
+    text-align: center;
+    background-color: rgba(253,143,143,.075);
+    color: #212121;
+    border: none;
+    z-index: 99;
+}
